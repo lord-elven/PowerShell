@@ -1,0 +1,1 @@
+﻿Get-ADComputer -Filter {enabled -eq $true} -SearchBase "OU=Domain Member Servers, DC=<DC>, DC=<DC>, DC=<DC>, DC=<DC>" -Property * | Select-Object Name,OperatingSystem,OperatingSystemVersion,ipv4Address | Export-CSV C:\tmp\Serverslist.csv -NoTypeInformation -Encoding UTF8

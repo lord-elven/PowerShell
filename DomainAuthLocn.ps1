@@ -1,0 +1,2 @@
+nltest /dsgetdc:<domain>
+pause
