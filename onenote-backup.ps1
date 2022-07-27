@@ -1,0 +1,1 @@
+﻿copy-item -filter *.* -path 'H:\OneNote Notebooks\My Notebook' -recurse -destination 'C:\Users\dgray\OneDrive\GM\'

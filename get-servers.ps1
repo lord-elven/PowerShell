@@ -1,0 +1,1 @@
+﻿Get-ADComputer -Filter {enabled -eq $true} -SearchBase "OU=G&M Servers, DC=gm-plc, DC=com" -Property * | Select-Object Name,OperatingSystem,OperatingSystemVersion,ipv4Address | Export-CSV C:\scripts\Serverslist.csv -NoTypeInformation -Encoding UTF8

@@ -1,7 +1,7 @@
 ﻿Clear-Host
 
 #$computers = Get-ADComputer -Filter {enabled -eq $true} -Properties Name | select @{Name="ComputerName";Expression={$_.Name}}
-#$servers = Get-ADComputer -Filter {enabled -eq $true} -SearchBase "OU=<OU>, DC=<DC>, DC=<DC>, DC=<DC>" -Properties Name | select @{Name="ComputerName";Expression={$_.Name}}
+#$servers = Get-ADComputer -Filter {enabled -eq $true} -SearchBase "OU=Domain Member Servers, DC=insurance, DC=financial, DC=local" -Properties Name | select @{Name="ComputerName";Expression={$_.Name}}
 
 $serverlist = get-content "c:\scripts\servers.txt" -ErrorAction SilentlyContinue
 
