@@ -1,7 +1,7 @@
 #Detect Local Admins - DGray 30/08/23
 
 #Predefined List of Admins to Check
-$adminList = @("Administrator", "ANO Admin etc...")
+$adminList = @("Administrator", "Domain Admins", "Windows-LocalAdministrator-AllClientDevices")
 
 #Get the list of Admins
 $localAdmins = Get-LocalGroupMember "Administrators"
