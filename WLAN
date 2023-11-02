@@ -1,0 +1,3 @@
+Netsh wlan show profile name=”Wi-Fi name” key=clear
+
+This command reveals the password for WiFi networks that the device is connected to, which is a step that threat actors commonly employ to leverage initial access to a device to gain further information and access in an environment.
